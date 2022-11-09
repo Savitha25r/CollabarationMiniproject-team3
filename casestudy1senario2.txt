@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace scenario2
+{ 
+    // C# program to display the array of structure
+    public struct Student
+    {
+        // Declare three variables
+        // id, name and age
+        public int Id;
+        public string Name;
+        public int Age;
+        // Set the employee details
+        public void SetStudent(int id, string name, int age)
+        {
+            Id = id;
+            Name = name;
+            Age = age;
+        }
+        // Display employee details
+        public void DisplayStudent()
+        {
+            Console.WriteLine("Student:");
+            Console.WriteLine("\tId : " + Id);
+            Console.WriteLine("\tName : " + Name);
+            Console.WriteLine("\tAge : " + Age);
+            Console.WriteLine("\n");
+            Console.ReadLine();
+        }
+    }
+    class student
+    {
+        // Driver code
+        static void Main(string[] args)
+        {
+            // Create array of structure
+            Student[] std =
+            {
+                    new Student(),
+                    new Student(),
+                    new Student()
+            };
+            // Pass the array indexes with values as structures
+            std[0].SetStudent(1, "sairoopa", 20);
+            std[1].SetStudent(2, "savitha", 21);
+            std[2].SetStudent(3, "aiswarya", 23);
+            // Call the display method
+            std[0].DisplayStudent();
+            std[1].DisplayStudent();
+            std[2].DisplayStudent();
+        }
+    }
+}
