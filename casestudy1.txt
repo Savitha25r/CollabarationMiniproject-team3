@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace casestudy_1
+{
+   
+
+
+
+public class student
+{
+    public int id;
+    public String name;
+    public DateTime dob;
+    public void insert(int i, String n, String d)
+    {
+        id = i;
+        name = n;
+        dob = d;
+    }
+    public void display()
+    {
+        Console.WriteLine(id + " " + name + " " + dob + " ");
+    }
+}
+class Scenario1
+{
+    public static void Main(string[] args)
+    {
+        App e1 = new App();
+        App e2 = new App();
+        App e3 = new App();
+        App e4 = new App();
+        App e5 = new App();
+        App e6 = new App();
+        e1.insert(101, "munni", " 05/ 06/ 2000");
+        e2.insert(102, "aiswharya", " 03/ 03/ 2001");
+        e3.insert(103, "sairoopa", " 02/ 02/ 2001");
+        e4.insert(104, "savitha", " 05/ 04/ 2001");
+        e5.insert(105, "aishu", "06/ 07/ 2001");
+        e6.insert(106, "savi", "03/ 02/ 2001");
+        e1.display();
+        e2.display();
+        e3.display();
+        e4.display();
+        e5.display();
+        e6.display();
+        Console.ReadLine();
+
+    }
+}
+
+}
