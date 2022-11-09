@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace casestudy1
+{
+    //public class
+    public class Student
+    {
+
+        // public data members
+        public int id;
+        public string name;
+        public int dob;
+
+        // private field
+        // private int marks = 35;
+
+    }
+
+    // another public class
+    public class studentinfo
+    {
+
+        // Main Method
+        public static void Main(string[] args)
+        {
+
+            // Creating object of C1 class
+            Student obj = new Student();
+
+            // setting values to public
+            // data members of class C1
+            obj.id = 101;
+            obj.name = "aishwarya";
+            DateTime dob = new DateTime(2001, 1, 1);
+
+            // setting values to private
+            // data members of class C1
+            // obj.mark = 0;
+
+            // display result
+            Console.WriteLine("Name: {0} \nid: {1} \ndob: {2}", obj.name, obj.id, dob.ToString());
+            //Console.WriteLine(dob.ToString());
+            Console.ReadLine();
+
+        }
+    }
+}
